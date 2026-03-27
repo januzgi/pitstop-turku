@@ -152,10 +152,6 @@ body.en div.lang-en {
   object-fit: contain;
 }
 
-.btn-wolt-icon-light {
-  filter: brightness(0) invert(1);
-}
-
 .btn-primary {
   background: var(--color-flame);
   color: var(--color-white);
@@ -198,17 +194,12 @@ body.en div.lang-en {
   transform: translateY(-2px);
 }
 
-.btn-outline:hover .btn-icon {
-  stroke: var(--color-white);
-}
-
 .btn-outline:hover svg[fill="currentColor"] {
   fill: var(--color-white);
 }
 
 .btn-wolt {
-  background: var(--color-wolt);
-  color: var(--color-white);
+  color: var(--color-wolt);
   border-color: var(--color-wolt);
 }
 
@@ -218,10 +209,6 @@ body.en div.lang-en {
   color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 157, 224, 0.3);
-}
-
-.btn-wolt .btn-wolt-icon {
-  filter: brightness(0) invert(1);
 }
 
 .btn-lg {
@@ -307,10 +294,6 @@ body.en div.lang-en {
   width: 18px;
   height: 18px;
   filter: none;
-}
-
-.nav-cta:hover .btn-wolt-icon {
-  filter: brightness(0) invert(1);
 }
 
 /* Language Switch */
