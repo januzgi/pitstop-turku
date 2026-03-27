@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Pitstop Street Food Fusion | Turku</title>
+  <meta name="description" content="Katso Pitstop Street Food Fusionin koko menu. Smash burgereita, wok-annoksia, wrappejä, loaded friessejä ja paljon muuta Turussa.">
+  <link rel="icon" type="image/jpeg" href="../pitstop_logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .menu-page {
+      min-height: 100vh;
+      padding-top: 100px;
+      padding-bottom: 4rem;
+    }
+
+    .menu-page-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .menu-page-header .section-title {
+      margin-bottom: 0.75rem;
+    }
+
+    .menu-lang-toggle {
+      display: inline-flex;
+      background: var(--color-tan);
+      border-radius: 50px;
+      padding: 4px;
+      gap: 4px;
+      margin-bottom: 2rem;
+    }
+
+    .menu-lang-btn {
+      padding: 0.5rem 1.5rem;
+      border: none;
+      background: transparent;
+      border-radius: 50px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all var(--transition);
+      color: var(--color-dark);
+    }
+
+    .menu-lang-btn.active {
+      background: var(--color-flame);
+      color: var(--color-white);
+    }
+
+    .menu-lang-btn:not(.active):hover {
+      background: rgba(232, 101, 43, 0.1);
+    }
+
+    .menu-images {
+      max-width: 800px;
+      margin: 0 auto;
+      display: none;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .menu-images.active {
+      display: flex;
+    }
+
+    .menu-images img {
+      width: 100%;
+      border-radius: var(--border-radius);
+      box-shadow: 0 8px 30px rgba(61, 50, 41, 0.1);
+    }
+
+    .menu-page-cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .menu-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-dark);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .menu-back:hover {
+      color: var(--color-flame);
+    }
+
+    @media (max-width: 360px) {
+      .menu-page {
+        padding-top: 80px;
+      }
+
+      .menu-lang-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="../pitstop_logo.jpg" alt="Pitstop Street Food Fusion" class="nav-logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#about" class="nav-link"><span class="lang-fi">Meistä</span><span class="lang-en">About</span></a></li>
+        <li><a href="index.html#food" class="nav-link"><span class="lang-fi">Ruoka</span><span class="lang-en">Food</span></a></li>
+        <li><a href="index.html#menu" class="nav-link">Menu</a></li>
+        <li><a href="index.html#reviews" class="nav-link"><span class="lang-fi">Arvostelut</span><span class="lang-en">Reviews</span></a></li>
+        <li><a href="index.html#contact" class="nav-link"><span class="lang-fi">Löydä meidät</span><span class="lang-en">Visit Us</span></a></li>
+        <li>
+          <a href="https://wolt.com/fi/fin/turku/restaurant/ravintola-pitstop" target="_blank" rel="noopener" class="nav-link nav-cta">
+            <img src="../Wolt_logo.png" alt="" class="btn-wolt-icon">
+            <span class="lang-fi">Tilaa Woltista</span><span class="lang-en">Order on Wolt</span>
+          </a>
+        </li>
+        <li class="nav-lang-item">
+          <div class="lang-switch">
+            <button class="lang-option active" data-lang="fi" aria-label="Suomeksi">FI</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-option" data-lang="en" aria-label="English">EN</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <main class="menu-page">
+    <div class="container">
+      <a href="index.html" class="menu-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        <span class="lang-fi">Takaisin etusivulle</span><span class="lang-en">Back to Home</span>
+      </a>
+
+      <div class="menu-page-header">
+        <h1 class="section-title">
+          <span class="lang-fi">Koko menu</span><span class="lang-en">Our Full Menu</span>
+        </h1>
+        <p class="section-subtitle">
+          <span class="lang-fi">Kaikki valmistetaan tuoreena avokeittiössä</span><span class="lang-en">Everything made fresh in our open kitchen</span>
+        </p>
+
+        <div class="menu-lang-toggle">
+          <button class="menu-lang-btn active" data-menu-lang="fi">Suomeksi</button>
+          <button class="menu-lang-btn" data-menu-lang="en">English</button>
+        </div>
+      </div>
+
+      <!-- Finnish Menu (default) -->
+      <div class="menu-images menu-images-fi active" id="menuFi">
+        <img src="../menu/menu_page_2.jpg" alt="Pitstop Menu - Wok-annokset (Suomeksi)" loading="lazy">
+        <img src="../menu/menu_page_4.jpg" alt="Pitstop Menu - Hampurilaiset (Suomeksi)" loading="lazy">
+        <img src="../menu/menu_page_6.jpg" alt="Pitstop Menu - Kasvis, Wrapit & Lisukkeet (Suomeksi)" loading="lazy">
+      </div>
+
+      <!-- English Menu -->
+      <div class="menu-images menu-images-en" id="menuEn">
+        <img src="../menu/menu_page_1.jpg" alt="Pitstop Menu - Wok dishes (English)" loading="lazy">
+        <img src="../menu/menu_page_3.jpg" alt="Pitstop Menu - Burgers (English)" loading="lazy">
+        <img src="../menu/menu_page_5.jpg" alt="Pitstop Menu - Vege Burgers, Wraps & Sides (English)" loading="lazy">
+      </div>
+
+      <div class="menu-page-cta">
+        <a href="https://wolt.com/fi/fin/turku/restaurant/ravintola-pitstop" target="_blank" rel="noopener" class="btn btn-wolt btn-lg">
+          <img src="../Wolt_logo.png" alt="" class="btn-wolt-icon">
+          <span class="lang-fi">Tilaa Woltista</span><span class="lang-en">Order on Wolt</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../pitstop_logo.jpg" alt="Pitstop" class="footer-logo">
+          <p><span class="lang-fi">Street Food Fusionia Turun sydämessä</span><span class="lang-en">Street Food Fusion in the Heart of Turku</span></p>
+        </div>
+        <div class="footer-links">
+          <h4><span class="lang-fi">Linkit</span><span class="lang-en">Quick Links</span></h4>
+          <ul>
+            <li><a href="index.html#about"><span class="lang-fi">Meistä</span><span class="lang-en">About</span></a></li>
+            <li><a href="index.html#food"><span class="lang-fi">Ruoka</span><span class="lang-en">Food</span></a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#reviews"><span class="lang-fi">Arvostelut</span><span class="lang-en">Reviews</span></a></li>
+            <li><a href="index.html#contact"><span class="lang-fi">Löydä meidät</span><span class="lang-en">Visit Us</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4><span class="lang-fi">Yhteystiedot</span><span class="lang-en">Get in Touch</span></h4>
+          <p>Aurakatu 3, 20100 Turku</p>
+          <p><a href="tel:+358453282140">045 328 2140</a></p>
+          <p><a href="tel:+358505565573">050 556 5573</a></p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/ravintolapitstop" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wolt.com/fi/fin/turku/restaurant/ravintola-pitstop" target="_blank" rel="noopener" aria-label="Wolt" class="footer-wolt-link">
+              <img src="../Wolt_logo.png" alt="Tilaa Woltista" class="footer-wolt-logo">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pitstop - Street Food Fusion. <span class="lang-fi">Kaikki oikeudet pidätetään.</span><span class="lang-en">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav — side drawer with backdrop
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+    const backdrop = document.getElementById('navBackdrop');
+
+    function closeNav() {
+      if (menu) menu.classList.remove('open');
+      if (toggle) toggle.classList.remove('active');
+      if (backdrop) backdrop.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        if (menu.classList.contains('open')) {
+          closeNav();
+        } else {
+          menu.classList.add('open');
+          toggle.classList.add('active');
+          if (backdrop) backdrop.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+
+      if (backdrop) backdrop.addEventListener('click', closeNav);
+
+      menu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', closeNav);
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeNav();
+      });
+    }
+
+    // Site language toggle (nav FI/EN)
+    function initLangSwitch() {
+      const langButtons = document.querySelectorAll('.lang-option');
+      const savedLang = localStorage.getItem('pitstop-lang') || 'fi';
+
+      function setLang(lang) {
+        if (lang === 'en') {
+          document.body.classList.add('en');
+        } else {
+          document.body.classList.remove('en');
+        }
+        langButtons.forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+      }
+
+      setLang(savedLang);
+
+      langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const lang = btn.dataset.lang;
+          setLang(lang);
+          localStorage.setItem('pitstop-lang', lang);
+        });
+      });
+    }
+
+    // Menu image language toggle
+    function initMenuLangToggle() {
+      const menuLangBtns = document.querySelectorAll('.menu-lang-btn');
+      const menuFi = document.getElementById('menuFi');
+      const menuEn = document.getElementById('menuEn');
+
+      menuLangBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          menuLangBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const lang = btn.dataset.menuLang;
+          if (lang === 'en') {
+            menuFi.classList.remove('active');
+            menuEn.classList.add('active');
+          } else {
+            menuEn.classList.remove('active');
+            menuFi.classList.add('active');
+          }
+        });
+      });
+    }
+
+    initLangSwitch();
+    initMenuLangToggle();
+  </script>
+</body>
+</html>

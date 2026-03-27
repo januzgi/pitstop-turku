@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pitstop - Street Food Fusion | Turku</title>
+    <meta
+      name="description"
+      content="Pitstop Street Food Fusion - Smash burgereita, wok-annoksia, wrappejä ja loaded friessejä Turun sydämessä. Tuoreita raaka-aineita, rohkeita makuja, viihtyisä tunnelma."
+    />
+    <meta property="og:title" content="Pitstop - Street Food Fusion | Turku" />
+    <meta
+      property="og:description"
+      content="Smash burgereita, wok-annoksia, wrappejä & loaded friessejä. Tuoretta, rohkeaa, valmistettu silmiesi edessä."
+    />
+    <meta property="og:image" content="../pitstop_logo.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/jpeg" href="../pitstop_logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <img
+            src="../pitstop_logo.jpg"
+            alt="Pitstop Street Food Fusion"
+            class="nav-logo-img"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="#about" class="nav-link"
+              ><span class="lang-fi">Meistä</span
+              ><span class="lang-en">About</span></a
+            >
+          </li>
+          <li>
+            <a href="#food" class="nav-link"
+              ><span class="lang-fi">Ruoka</span
+              ><span class="lang-en">Food</span></a
+            >
+          </li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li>
+            <a href="#reviews" class="nav-link"
+              ><span class="lang-fi">Arvostelut</span
+              ><span class="lang-en">Reviews</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link"
+              ><span class="lang-fi">Löydä meidät</span
+              ><span class="lang-en">Visit Us</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://wolt.com/fi/fin/turku/restaurant/ravintola-pitstop"
+              target="_blank"
+              rel="noopener"
+              class="nav-link nav-cta"
+            >
+              <img src="../Wolt_logo.png" alt="" class="btn-wolt-icon" />
+              <span class="lang-fi">Tilaa Woltista</span
+              ><span class="lang-en">Order on Wolt</span>
+            </a>
+          </li>
+          <li class="nav-lang-item">
+            <div class="lang-switch">
+              <button
+                class="lang-option active"
+                data-lang="fi"
+                aria-label="Suomeksi"
+              >
+                FI
+              </button>
+              <span class="lang-divider">|</span>
+              <button class="lang-option" data-lang="en" aria-label="English">
+                EN
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img
+          src="../images/pitstop_ignite_your_taste_flames_pan.jpg"
+          alt="Chef cooking with flames at Pitstop"
+          class="hero-bg-img"
+        />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <img src="../pitstop_logo.jpg" alt="Pitstop Logo" class="hero-logo" />
+        <p class="hero-tagline">
+          <span class="lang-fi">Sytytä Makusi</span
+          ><span class="lang-en">Ignite Your Taste</span>
+        </p>
+        <p class="hero-sub">
+          Smash Burgers &bull; Wok &bull; Wraps &bull; Loaded Fries
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">
+            <svg
+              class="btn-icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            <span class="lang-fi">Katso menu</span
+            ><span class="lang-en">See Our Menu</span>
+          </a>
+          <a
+            href="https://wolt.com/fi/fin/turku/restaurant/ravintola-pitstop"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-wolt"
+          >
+            <img src="../Wolt_logo.png" alt="" class="btn-wolt-icon" />
+            <span class="lang-fi">Tilaa Woltista</span
+            ><span class="lang-en">Order on Wolt</span>
+          </a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text fade-in">
+            <h2 class="section-title">
+              <span class="lang-fi">Itä kohtaa lännen</span
+              ><span class="lang-en">Where East Meets West</span>
+            </h2>
+            <p class="about-lead lang-fi">
+              Turun sydämessä Pitstop yhdistää rohkeat aasialaiset maut ja
+              länsimaisen street foodin klassikot. Jokainen annos valmistetaan
+              tuoreena avokeittiössä &mdash; näet liekit, kuulet sihinän ja
+              maistat eron.
+            </p>
+            <p class="about-lead lang-en">
+              In the heart of Turku, Pitstop brings together bold Asian flavors
+              and Western street food classics. Every dish is made fresh in our
+              open kitchen &mdash; you see the flames, hear the sizzle, and
+              taste the difference.
+            </p>
+
+            <p class="lang-fi">
+              Signature Masala Smash Burgeristamme tulisiin wok-nuudeleihin
+              Bangkok-kastikkeella &mdash; valmistamme ruokaa, joka on täynnä
+              makua, ruhtinaallisen kokoista ja aina tuoreista raaka-aineista.
+              Olitpa nappaamassa nopean aterian tai istumassa alas syömään,
+              viihtyisä paikkamme Aurakadulla tuntuu kuin kotona.
+            </p>
+            <p class="lang-en">
+              From our signature Masala Smash Burger to sizzling wok noodles
+              with Bangkok sauce, we craft food that's full of flavor, generous
+              in portion, and always made with fresh ingredients. Whether you're
+              grabbing a quick bite or sitting down for a meal, our cozy spot on
+              Aurakatu feels like home.
+            </p>
+
+            <div class="about-badges">
+              <span class="badge"
+                ><span class="badge-icon">&#x1F525;</span>
+                <span class="lang-fi">Avokeittiö</span
+                ><span class="lang-en">Open Kitchen</span></span
+              >
+              <span class="badge"
+                ><span class="badge-icon">&#x1F331;</span>
+                <span class="lang-fi">Kasvisvaihtoehtoja</span
+                ><span class="lang-en">Veggie Options</span></span
+              >
+              <span class="badge"
+                ><span class="badge-icon">&#x2714;</span> Halal</span
+              >
+              <span class="badge"
+                ><span class="badge-icon">&#x26A1;</span>
+                <span class="lang-fi">Nopea palvelu</span
+                ><span class="lang-en">Fast Service</span></span
+              >
+            </div>
+          </div>
+          <div class="about-images fade-in">
+            <img
+              src="../images/pitstop_bar_desk.jpg"
+              alt="Viihtyisä tiski Pitstopissa tuoreen wok-kulhon kanssa"
+              class="about-img about-img-main"
+              loading="lazy"
+            />
+            <img
+              src="../images/beef_frying_chef.jpg"
+              alt="Kokki paistaa lihaa avotulella"
+              class="about-img about-img-accent"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food Gallery Section -->
+    <section class="section food" id="food">
+      <div class="container">
+        <h2 class="section-title centered fade-in">
+          <span class="lang-fi">Tuoretta, rohkeaa, maukasta</span
+          ><span class="lang-en">Made Fresh, Served Bold</span>
+        </h2>
+        <p class="section-subtitle centered fade-in">
+          <span class="lang-fi"
+            >Jokainen annos valmistetaan intohimolla avokeittiössä</span
+          ><span class="lang-en"
+            >Every dish crafted with passion in our open kitchen</span
+          >
+        </p>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item-wide fade-in">
+            <img
+              src="../images/coke_burger_and_fries.jpg"
+              alt="Burger-ateria ranskalaisilla ja Coca-Colalla"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="../images/simple_shrimp_bowl.jpg"
+              alt="Katkarapu-wok-kulho"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="../images/wraps_coke_and_fries.jpg"
+              alt="Wrapit Coca-Colan ja ranskalaisten kanssa"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="../images/shrimp_bowl_closeup.jpg"
+              alt="Katkarapu-wok-kulho lähikuvassa"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item gallery-item-wide fade-in">
+            <img
+              src="../images/meal_bowl_with_logo.jpg"
+              alt="Tuore wok-kulho Pitstop-brändäyksellä"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="../images/burger_on_platter.jpg"
+              alt="Smash burger tarjottimella"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="../images/cup_meal_with_coke.jpg"
+              alt="Cup-ateria Coca-Colan kanssa"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="../images/kitchen_on_pan_cooking.jpg"
+              alt="Ruoanvalmistusta pannulla avokeittiössä"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="../images/tomatoes_on_burgers.jpg"
+              alt="Tuoreita tomaatteja burgereiden päällä"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax Divider -->
+    <section class="parallax-divider">
+      <img
+        src="../images/coca_cola_dimmed_2_meals.jpg"
+        alt=""
+        class="parallax-img"
+        loading="lazy"
+      />
+      <div class="parallax-overlay"></div>
+      <div class="parallax-content">
+        <p class="parallax-quote lang-fi">
+          "Ruoan esillepano ja viihtyisä tunnelma tekivät kokemuksesta entistä
+          paremman."
+        </p>
+        <p class="parallax-quote lang-en">
+          "The food presentation and cozy atmosphere made the experience even
+          better."
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <h2 class="section-title centered fade-in">
+          <span class="lang-fi">Meidän menu</span
+          ><span class="lang-en">Our Menu</span>
+        </h2>
+        <p class="section-subtitle centered fade-in">
+          <span class="lang-fi">Street food fusionia parhaimmillaan</span
+          ><span class="lang-en">Street food fusion at its finest</span>
+        </p>
+
+        <div class="menu-grid">
+          <!-- Wok -->
+          <div class="menu-card fade-in">
+            <div class="menu-card-header">
+              <h3>Wok</h3>
+              <span class="menu-price">alk. 7.90&euro;</span>
+            </div>
+            <p class="menu-card-desc lang-fi">
+              Rakenna oma wok-kulhosi: valitse pohja (nuudelit tai riisi), lisää
+              tuoreita kasviksia, valitse proteiini ja kruunaa kastikkeella.
+            </p>
+            <p class="menu-card-desc lang-en">
+              Build your own wok bowl: choose your base (noodles or rice), add
+              fresh veggies, pick your protein, and top it with one of our
+              signature sauces.
+            </p>
+            <div class="menu-tags">
+              <span class="menu-tag">Beijing (Teriyaki)</span>
+              <span class="menu-tag"
+                >Bangkok (<span class="lang-fi">Tulinen</span
+                ><span class="lang-en">Hot</span>)</span
+              >
+              <span class="menu-tag">Osaka (Yakisoba)</span>
+              <span class="menu-tag"
+                >Hanoi (<span class="lang-fi">Hapan &amp; imelä</span
+                ><span class="lang-en">Sweet &amp; Sour</span>)</span
+              >
+              <span class="menu-tag"
+                >Colombo (Curry &amp; <span class="lang-fi">Kookos</span
+                ><span class="lang-en">Coconut</span>)</span
+              >
+              <span class="menu-tag">Mumbai (Tikka Masala)</span>
+            </div>
+          </div>
+
+          <!-- Beef Burgers -->
+          <div class="menu-card fade-in">
+            <div class="menu-card-header">
+              <h3>Smash Burgers</h3>
+              <span class="menu-price">9.90 - 12.90&euro;</span>
+            </div>
+            <ul class="menu-list">
+              <li><strong>OG Smash</strong> <span>9.90&euro;</span></li>
+              <li><strong>BBQ Steakhouse</strong> <span>10.90&euro;</span></li>
+              <li>
+                <strong>PitStop Chipotle</strong> <span>10.90&euro;</span>
+              </li>
+              <li><strong>Masala Smash</strong> <span>12.90&euro;</span></li>
+              <li><strong>Blaze Siracha</strong> <span>10.90&euro;</span></li>
+            </ul>
+          </div>
+
+          <!-- Chicken Burgers -->
+          <div class="menu-card fade-in">
+            <div class="menu-card-header">
+              <h3>
+                <span class="lang-fi">Kanaburgeri</span
+                ><span class="lang-en">Chicken Burgers</span>
+              </h3>
+              <span class="menu-price">9.90&euro;</span>
+            </div>
+            <ul class="menu-list">
+              <li><strong>Holy Chick</strong> <span>9.90&euro;</span></li>
+              <li><strong>Fried Chicken</strong> <span>9.90&euro;</span></li>
+              <li>
+                <strong>PitStop Chipotle Chicken</strong>
+                <span>9.90&euro;</span>
+              </li>
+              <li>
+                <strong>Blaze Siracha Chicken</strong> <span>9.90&euro;</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Vege Burgers -->
+          <div class="menu-card fade-in">
+            <div class="menu-card-header">
+              <h3>
+                <span class="lang-fi">Kasvisburgeri</span
+                ><span class="lang-en">Vege Burgers</span>
+              </h3>
+              <span class="menu-price">9.90&euro;</span>
+            </div>
+            <ul class="menu-list">
+              <li><strong>Earth Bite</strong> <span>9.90&euro;</span></li>
+              <li>
+                <strong>PitStop Chipotle Halloumi</strong>
+                <span>9.90&euro;</span>
+              </li>
+              <li>
+                <strong>Blaze Siracha Veggie</strong> <span>9.90&euro;</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Wraps & Sides -->
+          <div class="menu-card fade-in">
+            <div class="menu-card-header">
+              <h3>
+                <span class="lang-fi">Wrapit &amp; Lisukkeet</span
+                ><span class="lang-en">Wraps &amp; Sides</span>
+              </h3>
+              <span class="menu-price">6.50 - 9.50&euro;</span>
+            </div>
+            <ul class="menu-list">
+              <li><strong>Wrap</strong> <span>9.50&euro;</span></li>
+              <li><strong>Loaded Fries</strong> <span>6.50&euro;</span></li>
+              <li>
+                <strong>Loaded Fries Large</strong> <span>8.50&euro;</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Meal Deal -->
+          <div class="menu-card menu-card-highlight fade-in">
+            <div class="menu-card-header">
+              <h3>
+                <span class="lang-fi">Ateria</span
+                ><span class="lang-en">Meal Deal</span>
+              </h3>
+              <span class="menu-price">+ 5&euro;</span>
+            </div>
+            <p class="menu-card-desc lang-fi">
+              Lisää juoma (0.33L) ja ranskalaiset mihin tahansa burgeriin tai
+              wrappiin vain 5&euro;.
+            </p>
+            <p class="menu-card-desc lang-en">
+              Add a drink (0.33L) and french fries to any burger or wrap for
+              just 5&euro;.
+            </p>
+            <div class="menu-card-actions">
+              <a href="menu.html" class="btn btn-outline">
+                <svg
+                  class="btn-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
+                <span class="lang-fi">Katso koko menu</span
+                ><span class="lang-en">View Full Menu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-cta fade-in">
+          <a
+            href="https://wolt.com/fi/fin/turku/restaurant/ravintola-pitstop"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-wolt btn-lg"
+          >
+            <img src="../Wolt_logo.png" alt="" class="btn-wolt-icon" />
+            <span class="lang-fi">Tilaa Woltista</span
+            ><span class="lang-en">Order on Wolt</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <h2 class="section-title centered fade-in">
+          <span class="lang-fi">Mitä asiakkaat sanovat</span
+          ><span class="lang-en">What People Say</span>
+        </h2>
+        <div class="reviews-stats fade-in">
+          <div class="review-stat">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>4.9 / 5 Google</p>
+          </div>
+          <div class="review-stat">
+            <div class="recommend-badge">100%</div>
+            <p>
+              <span class="lang-fi">Suosittelee Facebookissa</span
+              ><span class="lang-en">Recommend on Facebook</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="reviews-carousel" id="reviewsCarousel">
+          <div class="reviews-track" id="reviewsTrack">
+            <div class="review-card">
+              <div class="review-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="review-text">
+                "Pitstop has really wowed me with their wok dishes and smash
+                burgers! The wok is bursting with flavour and freshness, and the
+                smash burgers have a perfect sear, juicy inside, and delicious
+                toppings. Plus, the service is super friendly and quick."
+              </p>
+              <p class="review-author">Google Local Guide</p>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="review-text">
+                "Erittäin maistuvaa ruokaa, kannatti kokeilla. Mielettömän ihana
+                ja ystävällinen omistaja, joka tarjoili useita erilaisia ja
+                uusia makuelämyksiä!"
+              </p>
+              <p class="review-author">Marika K. &mdash; Facebook</p>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="review-text">
+                "Tried the burger and the wok today &mdash; both were super
+                tasty! Big portions, fresh flavors, and a really nice vibe.
+                Definitely coming back!"
+              </p>
+              <p class="review-author">Hasib M. &mdash; Facebook</p>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="review-text">
+                "I have tasted Wok Noodles from many places across the globe but
+                this is one of the bests! The owner and the chef of the
+                restaurant are very welcoming and humble!"
+              </p>
+              <p class="review-author">Google Local Guide</p>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="review-text">
+                "This place gave me japan vibes &mdash; open kitchen, wok,
+                burgers. The people were amazing and we had a nice talk."
+              </p>
+              <p class="review-author">Google Review</p>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="review-text">
+                "Really good authentic Asian food. The WOK is really amazing.
+                Price / quality combo best in Turku."
+              </p>
+              <p class="review-author">Carl-Bertil B. &mdash; Google</p>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="review-text">
+                "A cozy, small burger+wok spot right next to Taco Nito. Best
+                burger I've had in Turku in a long time, crispy, well seasoned
+                fries and reasonable prices."
+              </p>
+              <p class="review-author">Google Review</p>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="review-text">
+                "From the moment I walked in, I was impressed by the warm
+                atmosphere and welcoming staff. The menu is creative yet
+                comforting, and every dish was bursting with flavor."
+              </p>
+              <p class="review-author">Delowar H. &mdash; Facebook</p>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button
+              class="carousel-btn carousel-prev"
+              id="carouselPrev"
+              aria-label="Previous reviews"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button
+              class="carousel-btn carousel-next"
+              id="carouselNext"
+              aria-label="Next reviews"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Location Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title centered fade-in">
+          <span class="lang-fi">Löydä meidät</span
+          ><span class="lang-en">Visit Us</span>
+        </h2>
+        <p class="section-subtitle centered fade-in">
+          <span class="lang-fi">Aurakatu 3, Turun sydämessä</span
+          ><span class="lang-en">Aurakatu 3, in the heart of Turku</span>
+        </p>
+
+        <div class="contact-cards fade-in">
+          <!-- Location Card -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <h3>
+              <span class="lang-fi">Sijainti</span
+              ><span class="lang-en">Location</span>
+            </h3>
+            <p>Aurakatu 3<br />20100 Turku, Finland</p>
+          </div>
+
+          <!-- Hours Card -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <h3>
+              <span class="lang-fi">Aukioloajat</span
+              ><span class="lang-en">Opening Hours</span>
+            </h3>
+            <table class="hours-table">
+              <tr>
+                <td>
+                  <span class="lang-fi">Ma&ndash;To</span
+                  ><span class="lang-en">Mon&ndash;Thu</span>
+                </td>
+                <td>11:00 &ndash; 23:00</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="lang-fi">Pe&ndash;La</span
+                  ><span class="lang-en">Fri&ndash;Sat</span>
+                </td>
+                <td>12:00 &ndash; 03:00</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="lang-fi">Su</span
+                  ><span class="lang-en">Sun</span>
+                </td>
+                <td>11:00 &ndash; 22:00</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Contact Card -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+            </div>
+            <h3>
+              <span class="lang-fi">Yhteystiedot</span
+              ><span class="lang-en">Contact</span>
+            </h3>
+            <p><a href="tel:+358453282140">045 328 2140</a></p>
+            <p><a href="tel:+358505565573">050 556 5573</a></p>
+          </div>
+        </div>
+
+        <div class="contact-actions-center fade-in">
+          <a
+            href="https://www.facebook.com/ravintolapitstop"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-outline"
+          >
+            <svg
+              class="btn-icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+              />
+            </svg>
+            Facebook
+          </a>
+          <a
+            href="https://wolt.com/fi/fin/turku/restaurant/ravintola-pitstop"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-wolt"
+          >
+            <img src="../Wolt_logo.png" alt="" class="btn-wolt-icon" />
+            <span class="lang-fi">Tilaa Woltista</span
+            ><span class="lang-en">Order on Wolt</span>
+          </a>
+        </div>
+
+        <div class="contact-media-row fade-in">
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1918.5!2d22.2666!3d60.4489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76f8a1e5b8e7%3A0x0!2sAurakatu+3%2C+20100+Turku!5e0!3m2!1sfi!2sfi!4v1"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Pitstop sijainti Google Mapsissa"
+            >
+            </iframe>
+          </div>
+          <div class="contact-street">
+            <img
+              src="../images/pitstop_logo_by_the_street.jpg"
+              alt="Pitstop ravintola kadulta kuvattuna"
+              class="contact-street-img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../pitstop_logo.jpg" alt="Pitstop" class="footer-logo" />
+            <p>
+              <span class="lang-fi">Street Food Fusionia Turun sydämessä</span
+              ><span class="lang-en"
+                >Street Food Fusion in the Heart of Turku</span
+              >
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>
+              <span class="lang-fi">Linkit</span
+              ><span class="lang-en">Quick Links</span>
+            </h4>
+            <ul>
+              <li>
+                <a href="#about"
+                  ><span class="lang-fi">Meistä</span
+                  ><span class="lang-en">About</span></a
+                >
+              </li>
+              <li>
+                <a href="#food"
+                  ><span class="lang-fi">Ruoka</span
+                  ><span class="lang-en">Food</span></a
+                >
+              </li>
+              <li><a href="#menu">Menu</a></li>
+              <li>
+                <a href="menu.html"
+                  ><span class="lang-fi">Koko menu</span
+                  ><span class="lang-en">Full Menu</span></a
+                >
+              </li>
+              <li>
+                <a href="#reviews"
+                  ><span class="lang-fi">Arvostelut</span
+                  ><span class="lang-en">Reviews</span></a
+                >
+              </li>
+              <li>
+                <a href="#contact"
+                  ><span class="lang-fi">Löydä meidät</span
+                  ><span class="lang-en">Visit Us</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>
+              <span class="lang-fi">Yhteystiedot</span
+              ><span class="lang-en">Get in Touch</span>
+            </h4>
+            <p>Aurakatu 3, 20100 Turku</p>
+            <p><a href="tel:+358453282140">045 328 2140</a></p>
+            <p><a href="tel:+358505565573">050 556 5573</a></p>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/ravintolapitstop"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wolt.com/fi/fin/turku/restaurant/ravintola-pitstop"
+                target="_blank"
+                rel="noopener"
+                aria-label="Wolt"
+                class="footer-wolt-link"
+              >
+                <img
+                  src="../Wolt_logo.png"
+                  alt="Tilaa Woltista"
+                  class="footer-wolt-logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Pitstop - Street Food Fusion.
+            <span class="lang-fi">Kaikki oikeudet pidätetään.</span
+            ><span class="lang-en">All rights reserved.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
